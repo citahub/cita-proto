@@ -65,8 +65,10 @@ message UnverifiedTransaction {
 
 message SignedTransaction {
     UnverifiedTransaction transaction_with_sig = 1;
-    bytes tx_hash = 2;  // SignedTransaction hash
-    bytes signer = 3; //public key
+    // SignedTransaction hash
+    bytes tx_hash = 2;
+    // public key
+    bytes signer = 3;
 }
 
 // data precompile API
@@ -92,5 +94,8 @@ message BlockTxs {
 }
 
 message BlackList {
-    repeated bytes signer = 1; // public key
+    // black list of address, the account that sent the transaction does not have enough gas
+    repeated bytes black_list = 1;
+    // clear list of address
+    repeated bytes clear_list = 2; 
 }
