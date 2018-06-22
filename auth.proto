@@ -13,6 +13,7 @@ enum Ret {
     BadChainId = 7;
     QuotaNotEnough = 8;
     Forbidden = 9;
+    InvalidValue = 10;
 }
 
 message VerifyTxReq {
