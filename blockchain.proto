@@ -3,7 +3,7 @@ syntax = "proto3";
 enum ProofType {
     AuthorityRound = 0;
     Raft = 1;
-    Tendermint = 2;
+    Bft = 2;
 }
 
 message Proof {
