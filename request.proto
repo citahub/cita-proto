@@ -47,9 +47,8 @@ message Request {
         string meta_data = 22;
         // eth_getBalance
         string balance = 23;
-        // address(H160) + position(H256)
         StateProof state_proof = 24;
-        uint64 block_header_height = 25;
+        string block_header_height = 25;
     }
 }
 
