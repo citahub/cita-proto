@@ -36,6 +36,8 @@ message Response {
         string meta_data = 21;
         // eth_getBalance
         bytes balance = 22;
+        bytes state_proof = 23;
+        bytes block_header = 24;
     }
 }
 

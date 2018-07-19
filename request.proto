@@ -14,6 +14,12 @@ message Call {
     string height = 4;
 }
 
+message StateProof {
+    bytes address = 1;
+    bytes position = 2;
+    string height = 3;
+}
+
 message Request {
     bytes request_id = 1;
     oneof req {
@@ -41,6 +47,9 @@ message Request {
         string meta_data = 22;
         // eth_getBalance
         string balance = 23;
+        // address(H160) + position(H256)
+        StateProof state_proof = 24;
+        uint64 block_header_height = 25;
     }
 }
 
