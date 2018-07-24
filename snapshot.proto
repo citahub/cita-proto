@@ -31,6 +31,7 @@ message SnapshotResp {
     Resp resp = 1;
     Proof proof = 2;
     uint64 height = 3;
+    bool flag = 4;
 }
 
 
