@@ -48,6 +48,6 @@ message InnerMessage {
         MiscellaneousReq MiscellaneousReq = 23;
 
         BlackList BlackList = 24;
-        
+        StateSignal = 25;
     }
 }
