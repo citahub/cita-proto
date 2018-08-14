@@ -97,10 +97,5 @@ message BlackList {
     // black list of address, the account that sent the transaction does not have enough gas
     repeated bytes black_list = 1;
     // clear list of address
-    repeated bytes clear_list = 2;
-}
-
-// State positioning signal
-message StateSignal {
-    uint64 height = 1;
+    repeated bytes clear_list = 2; 
 }
