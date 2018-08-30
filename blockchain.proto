@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 enum ProofType {
+    AuthorityRound = 0;
     Raft = 1;
     Bft = 2;
 }
