@@ -54,7 +54,6 @@ message BlockTxHashes {
     AccountGasLimit account_gas_limit = 4;
     bool check_quota = 5;
     bytes admin_address = 6;
-    bool emergency_brake = 7;
 }
 
 message BlockTxHashesReq {
