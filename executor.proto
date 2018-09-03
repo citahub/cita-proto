@@ -78,6 +78,8 @@ message ConsensusConfig {
     repeated bytes nodes = 3;
     uint64 block_interval = 4;
     bool check_quota = 5;
+    bytes admin_address = 6;
+    bool emergency_brake = 7;
 }
 
 message ExecutedResult {
