@@ -3,7 +3,7 @@ package citacode;
 message ActionParams {
     string code_address = 1;
     string sender = 2;
-    string gas = 3;
+    string quota = 3;
     bytes data = 4;
 }
 message EnvInfo {
@@ -28,7 +28,7 @@ message KV {
 }
 
 message InvokeResponse {
-    string gas_left = 1;
+    string quota_left = 1;
     string message = 2;
     repeated Log logs = 3;
     repeated KV storages = 4;
