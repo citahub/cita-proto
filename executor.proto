@@ -17,9 +17,9 @@ message ExecutedHeader {
 
 enum ReceiptError {
     //ExecutionError
-    NotEnoughBaseGas = 0;
-    BlockGasLimitReached = 1;
-    AccountGasLimitReached = 2;
+    NotEnoughBaseQuota = 0;
+    BlockQuotaLimitReached = 1;
+    AccountQuotaLimitReached = 2;
     InvalidTransactionNonce = 3;
     NotEnoughCash = 4;
     NoTransactionPermission = 5;
@@ -28,7 +28,7 @@ enum ReceiptError {
     ExecutionInternal = 8;
     TransactionMalformed = 9;
     //EvmError
-    OutOfGas = 10;
+    OutOfQuota = 10;
     BadJumpDestination = 11;
     BadInstruction = 12;
     StackUnderflow = 13;
