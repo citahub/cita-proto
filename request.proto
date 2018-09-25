@@ -5,6 +5,7 @@ import "blockchain.proto";
 enum BlockTag {
     Latest = 0;
     Earliest = 1;
+    Pending = 2;
 }
 
 message Call {
