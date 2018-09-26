@@ -39,6 +39,7 @@ message RichStatus {
     uint64 height = 2;
     repeated bytes nodes = 3;
     uint64 interval = 4;
+    uint32 version = 5;
 }
 
 enum Crypto {

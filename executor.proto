@@ -79,6 +79,7 @@ message ConsensusConfig {
     uint64 block_interval = 4;
     bool check_quota = 5;
     bytes admin_address = 6;
+    uint32 version = 7;
 }
 
 message ExecutedResult {
