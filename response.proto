@@ -38,6 +38,7 @@ message Response {
         bytes balance = 22;
         bytes state_proof = 23;
         bytes block_header = 24;
+        bytes storage_value = 25;
     }
 }
 

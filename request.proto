@@ -21,6 +21,12 @@ message StateProof {
     string height = 3;
 }
 
+message StorageKey {
+    bytes address = 1;
+    bytes position = 2;
+    string height = 3;
+}
+
 message Request {
     bytes request_id = 1;
     oneof req {
@@ -50,6 +56,7 @@ message Request {
         string balance = 23;
         StateProof state_proof = 24;
         string block_header_height = 25;
+        StorageKey storage_key = 26;
     }
 }
 
