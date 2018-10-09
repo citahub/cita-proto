@@ -35,7 +35,7 @@ message InnerMessage {
         BlockTxHashesReq BlockTxHashesReq = 14;
 
         VerifyTxReq VerifyTxReq = 15;
-        VerifyTxResp VerifyTxResp = 16;
+
         VerifyBlockReq VerifyBlockReq = 17;
         VerifyBlockResp VerifyBlockResp = 18;
 
