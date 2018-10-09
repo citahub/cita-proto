@@ -56,6 +56,8 @@ message Transaction {
     bytes value = 6;
     uint32 chain_id = 7;
     uint32 version = 8;
+    bytes to_v1 = 9;
+    bytes chain_id_v1 = 10;
 }
 
 message UnverifiedTransaction {
