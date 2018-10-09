@@ -28,14 +28,7 @@ message VerifyTxReq {
     uint32 chain_id = 8;
     uint64 quota = 9;
     bytes value = 10;
-}
-
-message VerifyTxResp {
-    bytes tx_hash = 1;
-    Ret ret = 2;
-    bytes signer = 3; // public key only set in TxResp
-    uint32 received_chain_id = 4;
-    uint32 expected_chain_id = 5;
+    bytes chain_id_v1 = 11;
 }
 
 message VerifyBlockReq {
@@ -64,6 +57,7 @@ message BlockTxHashesReq {
 
 message Miscellaneous {
     uint32 chain_id = 1;
+    bytes chain_id_v1 = 2;
 }
 
 message MiscellaneousReq {
