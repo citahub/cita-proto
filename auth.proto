@@ -44,8 +44,8 @@ message VerifyBlockResp {
 message BlockTxHashes {
     uint64 height = 1;
     repeated bytes tx_hashes = 2;
-    uint64 block_gas_limit = 3;
-    AccountGasLimit account_gas_limit = 4;
+    uint64 block_quota_limit = 3;
+    AccountGasLimit account_quota_limit = 4;
     bool check_quota = 5;
     bytes admin_address = 6;
     uint32 version = 7;

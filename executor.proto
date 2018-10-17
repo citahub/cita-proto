@@ -10,8 +10,8 @@ message ExecutedHeader {
     bytes transactions_root = 5;
     bytes receipts_root = 6;
     bytes log_bloom = 7;
-    uint64 gas_used = 8;
-    uint64 gas_limit = 9;
+    uint64 quota_used = 8;
+    uint64 quota_limit = 9;
     bytes proposer = 10;
 }
 
@@ -55,7 +55,7 @@ message StateRoot {
 
 message Receipt {
     StateRoot state_root = 1;
-    string gas_used = 2;
+    string quota_used = 2;
     bytes log_bloom = 3;
     repeated LogEntry logs = 4;
     ReceiptErrorWithOption error = 5;
@@ -73,8 +73,8 @@ message ExecutedInfo {
 }
 
 message ConsensusConfig {
-    uint64 block_gas_limit = 1;
-    AccountGasLimit account_gas_limit = 2;
+    uint64 block_quota_limit = 1;
+    AccountGasLimit account_quota_limit = 2;
     repeated bytes nodes = 3;
     uint64 block_interval = 4;
     bool check_quota = 5;
