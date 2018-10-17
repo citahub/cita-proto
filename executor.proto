@@ -10,7 +10,7 @@ message ExecutedHeader {
     bytes transactions_root = 5;
     bytes receipts_root = 6;
     bytes log_bloom = 7;
-    uint64 gas_used = 8;
+    uint64 quota_used = 8;
     uint64 gas_limit = 9;
     bytes proposer = 10;
 }
@@ -55,7 +55,7 @@ message StateRoot {
 
 message Receipt {
     StateRoot state_root = 1;
-    string gas_used = 2;
+    string quota_used = 2;
     bytes log_bloom = 3;
     repeated LogEntry logs = 4;
     ReceiptErrorWithOption error = 5;

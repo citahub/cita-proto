@@ -18,7 +18,7 @@ message BlockHeader {
     bytes state_root = 4;
     bytes transactions_root = 5;
     bytes receipts_root = 6;
-    uint64 gas_used = 7;
+    uint64 quota_used = 7;
     uint64 gas_limit = 8;
     Proof proof = 9;
     bytes proposer = 10;
