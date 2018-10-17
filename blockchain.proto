@@ -19,7 +19,7 @@ message BlockHeader {
     bytes transactions_root = 5;
     bytes receipts_root = 6;
     uint64 quota_used = 7;
-    uint64 gas_limit = 8;
+    uint64 quota_limit = 8;
     Proof proof = 9;
     bytes proposer = 10;
 }
@@ -30,8 +30,8 @@ message Status {
 }
 
 message AccountGasLimit {
-    uint64 common_gas_limit = 1;
-    map<string,uint64> specific_gas_limit = 2;
+    uint64 common_quota_limit = 1;
+    map<string,uint64> specific_quota_limit = 2;
 }
 
 message RichStatus {

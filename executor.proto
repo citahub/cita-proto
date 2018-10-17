@@ -11,7 +11,7 @@ message ExecutedHeader {
     bytes receipts_root = 6;
     bytes log_bloom = 7;
     uint64 quota_used = 8;
-    uint64 gas_limit = 9;
+    uint64 quota_limit = 9;
     bytes proposer = 10;
 }
 
@@ -73,8 +73,8 @@ message ExecutedInfo {
 }
 
 message ConsensusConfig {
-    uint64 block_gas_limit = 1;
-    AccountGasLimit account_gas_limit = 2;
+    uint64 block_quota_limit = 1;
+    AccountGasLimit account_quota_limit = 2;
     repeated bytes nodes = 3;
     uint64 block_interval = 4;
     bool check_quota = 5;
