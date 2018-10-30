@@ -80,6 +80,7 @@ message ConsensusConfig {
     bool check_quota = 5;
     bytes admin_address = 6;
     uint32 version = 7;
+    repeated bytes validators = 8;
 }
 
 message ExecutedResult {
