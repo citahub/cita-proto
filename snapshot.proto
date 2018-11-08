@@ -33,6 +33,3 @@ message SnapshotResp {
     uint64 height = 3;
     bool flag = 4;
 }
-
-
-

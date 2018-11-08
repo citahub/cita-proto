@@ -8,6 +8,7 @@ import "consensus.proto";
 import "auth.proto";
 import "executor.proto";
 import "snapshot.proto";
+import "compact_block.proto";
 
 message InnerMessage {
 
@@ -49,5 +50,8 @@ message InnerMessage {
 
         BlackList BlackList = 24;
         StateSignal StateSignal = 25;
+
+        GetBlockTxn GetBlockTxn = 26;
+        BlockTxn BlockTxn = 27;
     }
 }
