@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+import "blockchain.proto";
+
+message GetBlockTxn {
+    bytes block_hash = 1;
+    repeated bytes short_ids = 2;
+}
+
+message BlockTxn {
+    bytes block_hash = 1;
+    repeated UnverifiedTransaction transactions = 2;
+}

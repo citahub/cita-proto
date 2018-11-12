@@ -41,4 +41,3 @@ message Response {
         bytes storage_value = 25;
     }
 }
-
