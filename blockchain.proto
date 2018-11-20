@@ -22,6 +22,7 @@ message BlockHeader {
     uint64 quota_limit = 8;
     Proof proof = 9;
     bytes proposer = 10;
+    uint32 version = 11;
 }
 
 message Status {
@@ -82,9 +83,8 @@ message BlockBody {
 }
 
 message Block {
-    uint32 version = 1;
-    BlockHeader header = 2;
-    BlockBody body = 3;
+    BlockHeader header = 1;
+    BlockBody body = 2;
 }
 
 message BlockWithProof {

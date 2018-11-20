@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "blockchain.proto";
+
+message ConsensusBlockHeader {
+    bytes prevhash = 1;
+    uint64 timestamp = 2;
+    uint64 height = 3;
+    bytes transactions_root = 4;
+    uint64 quota_limit = 5;
+    Proof proof = 6;
+    bytes proposer = 7;
+    uint32 version = 8;
+}
+
+message ConsensusBlock {
+    ConsensusBlockHeader header = 2;
+    BlockBody body = 3;
+}
