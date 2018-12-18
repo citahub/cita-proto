@@ -37,9 +37,6 @@ message InnerMessage {
 
         VerifyTxReq VerifyTxReq = 15;
 
-        VerifyBlockReq VerifyBlockReq = 17;
-        VerifyBlockResp VerifyBlockResp = 18;
-
         ExecutedResult ExecutedResult = 19;
 
         SnapshotReq SnapshotReq = 20;
@@ -53,5 +50,7 @@ message InnerMessage {
 
         GetBlockTxn GetBlockTxn = 26;
         BlockTxn BlockTxn = 27;
+        VerifySignedProposalResp VerifySignedProposalResp = 28;
+        FullSignedProposal FullSignedProposal = 29;
     }
 }

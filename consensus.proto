@@ -3,6 +3,15 @@ syntax = "proto3";
 import "blockchain.proto";
 
 message Proposal {
+    CompactBlock block = 1;
+    bool islock = 2;
+    uint64 lock_round = 3;
+    repeated Vote lock_votes = 4;
+    uint64 round = 5;
+    uint64 height = 6;
+}
+
+message FullProposal {
     Block block = 1;
     bool islock = 2;
     uint64 lock_round = 3;
@@ -19,5 +28,10 @@ message Vote {
 
 message SignedProposal {
     Proposal proposal = 1;
+    bytes signature = 2;
+}
+
+message FullSignedProposal {
+    FullProposal proposal = 1;
     bytes signature = 2;
 }

@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "blockchain.proto";
+import "consensus.proto";
 
 enum Ret {
     OK = 0;
@@ -31,14 +32,9 @@ message VerifyTxReq {
     bytes chain_id_v1 = 11;
 }
 
-message VerifyBlockReq {
-    uint64 id = 1;
-    repeated VerifyTxReq reqs = 2;
-}
-
-message VerifyBlockResp {
-    uint64 id = 1;
-    Ret ret = 2;
+message VerifySignedProposalResp {
+    Ret ret = 1;
+    FullSignedProposal signed_proposal = 2;
 }
 
 message BlockTxHashes {
