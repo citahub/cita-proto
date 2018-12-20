@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-
 import "blockchain.proto";
 
 message GetBlockTxn {
