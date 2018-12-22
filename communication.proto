@@ -35,8 +35,6 @@ message InnerMessage {
         BlockTxHashes BlockTxHashes = 13;
         BlockTxHashesReq BlockTxHashesReq = 14;
 
-        VerifyTxReq VerifyTxReq = 15;
-
         VerifyBlockReq VerifyBlockReq = 17;
         VerifyBlockResp VerifyBlockResp = 18;
 
@@ -53,5 +51,7 @@ message InnerMessage {
 
         GetBlockTxn GetBlockTxn = 26;
         BlockTxn BlockTxn = 27;
+
+        CompactSignedProposal CompactSignedProposal = 28;
     }
 }
