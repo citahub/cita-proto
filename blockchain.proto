@@ -44,8 +44,8 @@ message RichStatus {
 }
 
 enum Crypto {
-    SECP = 0;
-    SM2 = 1;
+    DEFAULT = 0;
+    RESERVED = 1;
 }
 
 message Transaction {
