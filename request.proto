@@ -57,6 +57,7 @@ message Request {
         StateProof state_proof = 24;
         string block_header_height = 25;
         StorageKey storage_key = 26;
+        bool software_version = 27;
     }
 }
 
