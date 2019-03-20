@@ -40,5 +40,6 @@ message Response {
         bytes block_header = 24;
         bytes storage_value = 25;
         string software_version = 26;
+        string peers_info = 27;
     }
 }
