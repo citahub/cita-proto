@@ -58,6 +58,7 @@ message Request {
         string block_header_height = 25;
         StorageKey storage_key = 26;
         bool software_version = 27;
+        bool peers_info = 28;
     }
 }
 
