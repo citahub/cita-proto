@@ -41,5 +41,6 @@ message Response {
         bytes storage_value = 25;
         string software_version = 26;
         string peers_info = 27;
+        bytes estimate_quota = 28;
     }
 }
