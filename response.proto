@@ -42,5 +42,6 @@ message Response {
         string software_version = 26;
         string peers_info = 27;
         bytes estimate_quota = 28;
+        string license_info = 29;
     }
 }

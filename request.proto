@@ -60,6 +60,7 @@ message Request {
         bool software_version = 27;
         bool peers_info = 28;
         Call estimate_quota = 29;
+        bool license_info = 30;
     }
 }
 
