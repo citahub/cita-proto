@@ -41,6 +41,7 @@ message RichStatus {
     uint64 interval = 4;
     uint32 version = 5;
     repeated bytes validators = 6;
+    uint64 timestamp = 7;
 }
 
 enum Crypto {
