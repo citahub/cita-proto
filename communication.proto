@@ -53,5 +53,6 @@ message InnerMessage {
         BlockTxn BlockTxn = 27;
 
         CompactSignedProposal CompactSignedProposal = 28;
+        GetTxList GetTxList = 29;
     }
 }
