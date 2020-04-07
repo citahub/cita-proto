@@ -43,6 +43,10 @@ message BlockTxHashesReq {
     uint64 height = 1;
 }
 
+message GetTxList {
+    uint64 height = 1;
+}
+
 message Miscellaneous {
     uint32 chain_id = 1;
     bytes chain_id_v1 = 2;
