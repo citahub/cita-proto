@@ -37,6 +37,8 @@ enum ReceiptError {
     MutableCallInStaticContext = 16;
     OutOfBounds = 17;
     Reverted = 18;
+    //AdditionError
+    AccountFrozen = 19;
 }
 
 message LogEntry {
