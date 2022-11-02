@@ -119,3 +119,12 @@ message BlackList {
 message StateSignal {
     uint64 height = 1;
 }
+
+message LogBloom {
+    bytes log_bloom = 1;
+}
+
+message BlockWithLogBloom {
+    Block block = 1;
+    LogBloom log_bloom = 2;
+}
