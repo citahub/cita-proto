@@ -45,3 +45,35 @@ message Response {
         string license_info = 29;
     }
 }
+
+message LightResponse {
+    bytes request_id = 1;
+    int64 code = 2;
+    oneof data {
+        string error_msg = 3;
+        string tx_state = 4;
+        bytes block = 5;
+        bytes call_result = 6;
+        bytes receipt = 7;
+        bytes contract_code = 8;
+        bytes contract_abi = 9;
+        bool none = 10;
+        // cita_getMetaData
+        string meta_data = 11;
+        // eth_getBalance
+        bytes balance = 12;
+        bytes block_header = 13;
+        bytes estimate_quota = 14;
+        bytes transaction_response = 15;
+        bytes storage_value = 16;
+        uint64 transaction_count = 17;
+
+//        bytes light_call = 30;
+//        string light_transaction_receipt = 31;
+//        bytes light_transaction = 32;
+//        bytes light_code = 33;
+//        bytes light_abi = 34;
+//        string light_block = 35;
+//        bytes light_estimate_quota = 36;
+    }
+}

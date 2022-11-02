@@ -54,5 +54,22 @@ message InnerMessage {
 
         CompactSignedProposal CompactSignedProposal = 28;
         GetTxList GetTxList = 29;
+
+        TrieResponse TrieResponse = 30;
+        ReceiptResponse ReceiptResponse = 31;
+        CodeResponse CodeResponse = 32;
+        AbiResponse AbiResponse = 33;
+        TransactionResponse TransactionResponse = 34;
+
+        SyncLightRequest SyncLightRequest = 35;
+        SyncLightResponse SyncLightResponse = 36;
+
+        LightRequest LightRequest = 37;
+        LightResponse LightResponse = 38;
+
+        ValidatorsListReq ValidatorsListReq = 39;
+        ValidatorsListResp ValidatorsListResp = 40;
+
+        BlockWithLogBloom BlockWithLogBloom = 41;
     }
 }

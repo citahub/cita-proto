@@ -61,6 +61,67 @@ message Request {
         bool peers_info = 28;
         Call estimate_quota = 29;
         bool license_info = 30;
+
+//        bytes light_transaction_receipt = 31;
+//        bytes light_transaction = 32;
+//        string light_code = 33;
+//        string light_abi = 34;
+//        string light_block_by_hash = 35;
+//        string light_block_by_height = 36;
+//        Call lgiht_call = 37;
+//        string light_transaction_count = 38;
+//        string light_meta_data = 39;
+//        string light_balance = 40;
+//        Call light_estimate_quota = 41;
+    }
+}
+
+message LightRequest {
+    bytes request_id = 1;
+    oneof req {
+        bool block_number = 2;
+        string block_by_hash = 3;
+        string block_by_height = 4;
+        bytes transaction = 5;
+        uint64 height = 6;
+        bool peercount = 7;
+        Call call = 8;
+        string filter = 9;
+        bytes transaction_receipt = 10;
+        string transaction_count = 11;
+        string code = 12;
+        string abi = 13;
+        string new_filter = 14;
+        bool new_block_filter = 15;
+        uint64 uninstall_filter = 16;
+        uint64 filter_changes = 17;
+        uint64 filter_logs = 18;
+        UnverifiedTransaction un_tx = 19;//交易统一到这里了。划分在请求里面
+        BatchRequest batch_req = 20;
+        bytes transaction_proof = 21;
+        // cita_getMetaData
+        string meta_data = 22;
+        // eth_getBalance
+        string balance = 23;
+        StateProof state_proof = 24;
+        string block_header_height = 25;
+        StorageKey storage_key = 26;
+        bool software_version = 27;
+        bool peers_info = 28;
+        Call estimate_quota = 29;
+        bool license_info = 30;
+
+//        bytes light_transaction_receipt = 31;
+//        bytes light_transaction = 32;
+//        string light_code = 33;
+//        string light_abi = 34;
+//        string light_block_by_hash = 35;
+//        string light_block_by_height = 36;
+//        Call lgiht_call = 37;
+//        string light_transaction_count = 38;
+//        string light_meta_data = 39;
+//        string light_balance = 40;
+//        Call light_estimate_quota = 41;
     }
 }
 

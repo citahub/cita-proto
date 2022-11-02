@@ -10,3 +10,11 @@ message SyncRequest {
 message SyncResponse {
     repeated Block blocks = 1;
 }
+
+message SyncLightRequest {
+    repeated uint64 heights = 1;
+}
+
+message SyncLightResponse {
+    repeated BlockWithLogBloom blocks = 1;
+}
