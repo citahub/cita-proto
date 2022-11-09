@@ -127,4 +127,5 @@ message LogBloom {
 message BlockWithLogBloom {
     Block block = 1;
     LogBloom log_bloom = 2;
+    bool with_txs = 3;
 }
