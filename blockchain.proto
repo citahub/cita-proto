@@ -129,3 +129,11 @@ message BlockWithLogBloom {
     LogBloom log_bloom = 2;
     bool with_txs = 3;
 }
+
+message ChainVersionReq {
+    string soft_version = 1;
+}
+
+message ChainVersionResp {
+    string soft_version = 1;
+}
