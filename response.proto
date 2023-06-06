@@ -43,6 +43,7 @@ message Response {
         string peers_info = 27;
         bytes estimate_quota = 28;
         string license_info = 29;
+        uint64 pool_tx_num = 30;
     }
 }
 

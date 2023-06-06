@@ -61,6 +61,7 @@ message Request {
         bool peers_info = 28;
         Call estimate_quota = 29;
         bool license_info = 30;
+        bool pool_tx_num = 31;
     }
 }
 

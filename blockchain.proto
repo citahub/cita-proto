@@ -137,3 +137,7 @@ message ChainVersionReq {
 message ChainVersionResp {
     string soft_version = 1;
 }
+
+message PoolTxNum {
+    uint64 num = 1;
+}
