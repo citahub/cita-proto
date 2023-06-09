@@ -13,6 +13,7 @@ message Call {
     bytes to = 2;
     bytes data = 3;
     string height = 4;
+    bool extra = 5;
 }
 
 message StateProof {
