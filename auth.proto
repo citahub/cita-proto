@@ -54,3 +54,9 @@ message Miscellaneous {
 
 message MiscellaneousReq {
 }
+
+message CensorAddress {
+    // 1 - add, 2 - remove
+    uint32 action = 1;
+    bytes address = 2;
+}

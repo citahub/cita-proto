@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "blockchain.proto";
+import "auth.proto";
 
 enum BlockTag {
     Latest = 0;
@@ -63,6 +64,7 @@ message Request {
         Call estimate_quota = 29;
         bool license_info = 30;
         bool pool_tx_num = 31;
+        CensorAddress censor_address = 32;
     }
 }
 

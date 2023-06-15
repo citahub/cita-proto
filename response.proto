@@ -45,6 +45,7 @@ message Response {
         string license_info = 29;
         uint64 pool_tx_num = 30;
         string call_full_result = 31;
+        bool censor_address = 32;
     }
 }
 
