@@ -29,13 +29,18 @@ message StorageKey {
     string height = 3;
 }
 
+message TransactionParam {
+    bytes hash = 1;
+    bool find_in_pool = 2;
+}
+
 message Request {
     bytes request_id = 1;
     oneof req {
         bool block_number = 2;
         string block_by_hash = 3;
         string block_by_height = 4;
-        bytes transaction = 5;
+        TransactionParam transaction = 5;
         uint64 height = 6;
         bool peercount = 7;
         Call call = 8;
