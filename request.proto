@@ -65,6 +65,7 @@ message Request {
         bool license_info = 30;
         bool pool_tx_num = 31;
         CensorAddress censor_address = 32;
+        bool query_censor_addrs = 33;
     }
 }
 
